@@ -13,7 +13,7 @@ export class GitService {
   // userRep: ApiResponse;
 
   constructor(private http: HttpClient) {
-    this.user = new Users("", "", "", );
+    this.user = new Users("", "", "",0,0,0,0,"","","" );
     // this.repository = new Repository("", "", "", "")
   }
 
