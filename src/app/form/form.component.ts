@@ -19,7 +19,8 @@ export class FormComponent implements OnInit {
     this.gitservice = gitservice
   }
 
-  ngOnInit(): void {
+  ngOnInit():void{
+    this.users=this.gitservice.user
   }
 
 }
