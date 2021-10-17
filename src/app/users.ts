@@ -9,6 +9,7 @@ export class Users {
         public following: number,
         public url: string,
         public location: string,
-        public email: string
+        public email: string,
+        
     ) { }
 }
