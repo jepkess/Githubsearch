@@ -10,6 +10,7 @@ import { Users } from '../users';
 export class UserComponent implements OnInit {
   users!: Users;
   gitservice: GitService;
+  userdetails:any[];
  
   constructor(gitservice: GitService) {
     this.gitservice= gitservice
@@ -17,6 +18,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
     this.users=this.gitservice.user
+    this.userdetails=this.gitservice.userdata
   }
 
 }

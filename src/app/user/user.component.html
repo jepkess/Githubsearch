@@ -1,1 +1,11 @@
-<p>user works!</p>
+<div *ngIf ='users.login'>
+    <img src="{{users.avatar_url}}">
+    <p>username is {{users.login}}</p>
+    <p>Has {{users.public_repos}}</p>
+</div>
+
+<div *ngFor="let repo of userdetails">
+    <p>{{repo.name}}</p>
+
+</div>
+
