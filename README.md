@@ -24,7 +24,7 @@ This is a web application that help users search for their Github accounts and r
 This project is under [mit] (LICENCE.md)
 
 ## live 
-[live] (https://jepkess.github.io/Githubsearch/)
+[live](https://jepkess.github.io/Githubsearch/)
 
 ## Development server
 
