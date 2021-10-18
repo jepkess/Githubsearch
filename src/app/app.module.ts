@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { FormComponent } from './form/form.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    FormComponent
+    FormComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
