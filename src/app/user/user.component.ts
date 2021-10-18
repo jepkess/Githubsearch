@@ -10,7 +10,7 @@ import { Users } from '../users';
 export class UserComponent implements OnInit {
   users!: Users;
   gitservice: GitService;
-  userdetails:any[];
+  userdetails!:any[];
  
   constructor(gitservice: GitService) {
     this.gitservice= gitservice
