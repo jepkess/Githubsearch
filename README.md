@@ -21,7 +21,10 @@ This is a web application that help users search for their Github accounts and r
 
 
 ## licence
-This project is under [mit] (LCENCE.md)
+This project is under [mit] (LICENCE.md)
+
+## live 
+[live] ()
 
 ## Development server
 
