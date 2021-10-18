@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <div *ngIf ='users.login'>
         <img src="{{users.avatar_url}}">
         <p>username is {{users.login}}</p>
@@ -9,5 +9,84 @@
         <p>{{repo.name}}</p>
     
     </div>
+</div> -->
+<div class="container bg-secondary">
+
+    
+    <div *ngIf="users,repo">
+        <div class="row">
+            <div class="col-sm">
+                <div class="testimonial-card">
+                    <div class="avatar pt-3" style="z-index: 4">
+                        <img src="{{ users.avatar_url }}" class="width-full border bg-white" alt="avatar" style="height: auto" alt width="240" height="240" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="testimonial-card">
+                    <div class="card-body">
+                        <h3 class="card-title" style="text-align: center">
+                            {{ users.login }}
+                        </h3>
+                        <hr />
+                        <div style="text-align: center">
+                            <p>Bio</p>
+                            <p>{{ users.bio }}</p>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm">
+                                <p>Followers</p>
+                                {{ users.followers }}
+                            </div>
+                            <div class="col-sm">
+                                <p>Following</p>
+                                {{ users.following }}
+                            </div>
+                            <div class="col-sm">
+                                <p>Email</p>
+                                {{ users.email }}
+                            </div>
+                            <div class="col-sm">
+                                <p>Location</p>
+                                {{ users.location }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="text-align: center;">
+
+        <div class="row">
+            <div class="col-md-6" *ngFor="let repos of userdetails" id="card">
+                <div class="card mt-2" id="card2">
+
+                    <h3 class="text-center pt-4 para">
+                        {{repos.name}}
+                    </h3>
+
+                    <p class="description">
+                        {{repos.description}}
+                    </p>
+
+                    <p>
+                        {{repos.language}}
+                    </p>
+
+                    <div class="card-footer text-center bg-primary">
+                        <a href="{{ repos.html_url }}" class="btn btn-success" target="_blank">View on GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
