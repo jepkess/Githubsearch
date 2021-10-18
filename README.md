@@ -1,6 +1,27 @@
 # Gitsearch
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+## Author
+Vincent kipkirui 
+
+## Description
+This is a web application that help users search for their Github accounts and repositories.
+
+## setup
+1. Use this command to clone `$ git clone https://github.com/jepkess/Githubsearch.git
+2. This will clone the repositoty into your local folder
+
+## Technologies used
+1. HTMl
+2. Typescript
+3. css
+4. Git
+   
+## live
+
+
+## licence
+This project is under [mit] 
 
 ## Development server
 
